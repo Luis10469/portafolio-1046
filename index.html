@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <script src="src/js/main.js"></script>
+    <body>
+    <!-- Header con navegación responsiva -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Menú principal">
+            <a href="#" class="logo" aria-label="Inicio del sitio">Mi Portafolio</a>
+            <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="">Sobre Mí</a></li>
+                <li><a href="#mis-proyectos">Mis Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Sobre Mí -->
+         <section id="sobre-mi" class="section animated-section" tabindex="0" aria-labelledby="sobre-mi-title">
+  <h2 id="sobre-mi-title">Sobre Mí</h2>
+  <div class="sobre-mi-container">
+    <div class="sobre-mi-texto">
+      <p>
+        ¡Hola! Soy Brayan, un desarrollador apasionado por crear soluciones web modernas, accesibles y eficientes.
+        Con meses de experiencia en desarrollo HTML y CSS, me quiero especializar en tecnologías como JavaScript,
+        HTML5 y CSS3, y tal vez hacking ético. Disfruto aprender constantemente y enfrentar nuevos retos para crecer profesionalmente.
+      </p>
+    </div>
+    <div class="sobre-mi-foto">
+      <img src=".//src/img/foto.jpg" alt="Foto de Brayan desarrollador" />
+    </div>
+  </div>
+</section>
+
+        
+        <!-- Sección Mis Proyectos -->
+        <section id="mis-proyectos" class="section animated-section" tabindex="0" aria-labelledby="mis-proyectos-title">
+            <h2 id="mis-proyectos-title">Mis Proyectos</h2>
+            <div class="projects-grid">
+                <article class="project-card" tabindex="0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdQP5ekWP5VEudxkVdtfVFuDwxXQH1FC8jrA&s" alt="imagen de codigo html y css" />
+                   
+                    <a href="../CRIPTO_WEB.HTML/CRITO.HTML" target="_blank">
+                    <h3>CRIPTO WEB </h3>
+                    </a>
+                    <p>
+                        una pagina web, de analisis y desarollo de analisis de mercados finacieros
+                    </p>                   
+                </article>
+
+                <article class="project-card" tabindex="0">
+                    <img src="https://vivirenelpoblado.com/wp-content/uploads/2021/08/becar-a-estudiantes-antioquenos-en-programas-de-desarrollo-de-software-2.jpg" alt="estudiante de desarrollo web" />
+                     <a href="../blok-personal/blok.html" target="_blank">
+                    <h3>Blog Personal</h3>
+                    </a>
+                    <p> estudiante de analisis y desarollo de sofware, del SENA complejo norte cursando el segundo trimestre de la carrera de desarrollo web, viendo JavaScript, HTML5 y CSS3 </p>
+                </article>
+
+                <article class="project-card" tabindex="0">
+                    <img src="https://img.freepik.com/foto-gratis/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010125.jpg?semt=ais_hybrid&w=740&q=80" alt="Captura del proyecto Aplicación de Tareas" />
+
+                    <h3>Aplicación de Tareas</h3>
+                       
+                    <p>
+                        soy capas de desarollar una pagina web  basica, pero estamos estudiand pra mejorar y hacer mas completo muesta carrera y anplianos en otro campo de conosimiento 
+                    </p>
+                    </p>
+                </article>
+
+                <article class="project-card" tabindex="0">
+                    <img src="https://picsum.photos/id/1060/400/250" alt="Captura del proyecto Portafolio Interactivo" />
+                    <h3>.</h3>
+                    <p>
+                        Página personal con animaciones y contenido dinámico para mostrar proyectos,
+                        habilidades y experiencias de forma atractiva.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section animated-section" tabindex="0" aria-labelledby="contacto-title">
+            <h2 id="contacto-title">Contacto</h2>
+            <form id="contact-form" novalidate aria-describedby="contact-form-instructions">
+                <p id="contact-form-instructions">
+                    Completa el formulario para enviarme un mensaje. Todos los campos son obligatorios.
+                </p>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        placeholder="Tu nombre completo" 
+                        required 
+                        minlength="2" 
+                        maxlength="50" 
+                        aria-required="true" 
+                        aria-describedby="nombre-error"
+                    />
+                    <span class="error-message" id="nombre-error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="tu@email.com" 
+                        required 
+                        aria-required="true" 
+                        aria-describedby="email-error"
+                    />
+                    <span class="error-message" id="email-error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        rows="5" 
+                        placeholder="Escribe tu mensaje aquí" 
+                        required 
+                        minlength="10" 
+                        maxlength="500" 
+                        aria-required="true" 
+                        aria-describedby="mensaje-error"
+                    ></textarea>
+                    <span class="error-message" id="mensaje-error" aria-live="polite"></span>
+                </div>
+                <button type="submit">Enviar</button>
+                <p class="form-feedback" aria-live="polite" role="alert"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Mi Portafolio Personal. Todos los derechos reservados.</p>
+        
+         <a href="https://www.instagram.com/m_oralesvillanueva?igsh=eWx0djA4d2t2dmFs&utm_source=qr " target="_blank">
+                    <p>instagram</p>
+            </a>
+    
+    </footer>
+
+    <script>
+        // Navegación responsiva - Toggle menú hamburguesa
+        (function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            navToggle.addEventListener('click', () => {
+                const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+                navToggle.setAttribute('aria-expanded', !expanded);
+                navMenu.classList.toggle('nav-menu_visible');
+                navToggle.classList.toggle('nav-toggle_active');
+            });
+
+            // Cerrar menú al seleccionar un enlace (en móvil)
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navMenu.classList.contains('nav-menu_visible')) {
+                        navMenu.classList.remove('nav-menu_visible');
+                        navToggle.setAttribute('aria-expanded', false);
+                         navToggle.classList.remove('nav-toggle_active');
+                    }
+                });
+            });
+        })();
+
+        // Animaciones al hacer scroll para secciones-CODIGO DE JAVA 
+        (function() {
+            const animatedSections = document.querySelectorAll('.animated-section'); 
+
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85 &&
+                    rect.bottom >= 0
+                );
+            }
+
+            function runAnimations() {
+                animatedSections.forEach(section => {
+                    if (isInViewport(section)) {
+                        section.classList.add('fade-slide-in');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', runAnimations);
+            window.addEventListener('load', runAnimations);
+        })();
+
+        // Validación simple del formulario de contacto
+        (function() {
+            const form = document.getElementById('contact-form');
+            const inputs = {
+                nombre: form.elements['nombre'],
+                email: form.elements['email'],
+                mensaje: form.elements['mensaje']
+            };
+            const errors = {
+                nombre: document.getElementById('nombre-error'),
+                email: document.getElementById('email-error'),
+                mensaje: document.getElementById('mensaje-error')
+            };
+            const feedback = form.querySelector('.form-feedback');
+
+            function validateNombre() {
+                const value = inputs.nombre.value.trim();
+                if (value.length < 2) {
+                    errors.nombre.textContent = 'El nombre debe tener al menos 2 caracteres.';
+                    return false;
+                }
+                if (value.length > 50) {
+                    errors.nombre.textContent = 'El nombre no puede superar 50 caracteres.';
+                    return false;
+                }
+                errors.nombre.textContent = '';
+                return true;
+            }
+
+            function validateEmail() {
+                const value = inputs.email.value.trim();
+                // Email regex simple para validación básica
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(value)) {
+                    errors.email.textContent = 'Por favor, introduce un correo electrónico válido.';
+                    return false;
+                }
+                errors.email.textContent = '';
+                return true;
+            }
+
+            function validateMensaje() {
+                const value = inputs.mensaje.value.trim();
+                if (value.length < 10) {
+                    errors.mensaje.textContent = 'El mensaje debe tener al menos 10 caracteres.';
+                    return false;
+                }
+                if (value.length > 500) {
+                    errors.mensaje.textContent = 'El mensaje no puede superar 500 caracteres.';
+                    return false;
+                }
+                errors.mensaje.textContent = '';
+                return true;
+            }
+
+            inputs.nombre.addEventListener('input', validateNombre);
+            inputs.email.addEventListener('input', validateEmail);
+            inputs.mensaje.addEventListener('input', validateMensaje);
+
+            form.addEventListener('submit', event => {
+                event.preventDefault();
+                feedback.textContent = '';
+                const isNombreValid = validateNombre();
+                const isEmailValid = validateEmail();
+                const isMensajeValid = validateMensaje();
+
+                if (isNombreValid && isEmailValid && isMensajeValid) {
+                    // Aquí se podría integrar backend o servicio de envío
+                    feedback.textContent = 'Gracias por tu mensaje. Me pondré en contacto contigo pronto.';
+                    feedback.style.color = 'var(--color-primary)';
+                    form.reset();
+                } else {
+                    feedback.textContent = 'Por favor, corrige los errores antes de enviar.';
+                    feedback.style.color = '#cc0000';
+                }
+            });
+        })();
+    </script>
+</body>
+</body>
+</html>
